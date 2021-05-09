@@ -1,0 +1,42 @@
+body {
+  background-color: #fcd12a;
+  font-family: 'Nunito', sans-serif;
+}
+
+.navbar {
+  margin: 10px;
+  border-radius: 3px;
+  display: inline-flex
+}
+.containers {
+  width: 100%;
+  margin: 0;
+}
+.image-stack {
+  position: relative;
+}
+.image-stack__item--bottom {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: -3;
+  opacity: 0.9;
+}
+.image-stack__item--top {
+  padding-top: 20px;
+  padding-right: 20%;
+  padding-left: 15px;
+  width: 34%;
+  border-radius: 3px;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.rec-proj {
+    margin-bottom: 15px;
+}
+.proj-row {
+    margin-top: 10px;
+}

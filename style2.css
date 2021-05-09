@@ -1,0 +1,39 @@
+body {
+    background-color: #fcd12a;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .navbar {
+    margin: 10px;
+    border-radius: 3px;
+    display: inline-flex
+  }
+  .containers {
+    width: 100%;
+    margin: 0;
+  }
+  .image-stack {
+    position: relative;
+  }
+  .image-stack__item--bottom {
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -3;
+    opacity: 0.9;
+  }
+  .img-1 {
+    width: 100%;
+    display: block;
+  }
+  .all-projects {
+      display: flex;
+      margin-top: 15px;
+  }
+  .tech {
+      margin-top: 15px;
+  }
+  img {
+      height: 1%;
+      width: 1%;
+  }
