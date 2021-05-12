@@ -1,12 +1,30 @@
 body {
   background-color: #fcd12a;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
+  z-index: 2;
+}
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+}
+.front {
+  z-index: 2;
+}
+.back {
+  opacity: 0.1;
+  z-index: -1;
+  min-height: 100%;
+  background-image: url("https://tse1.mm.bing.net/th?id=OIP.SxMINsWHO_KOizmhGfFwNQHaHa&pid=Api&P=0&w=300&h=300");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar {
   margin: 10px;
   border-radius: 3px;
-  display: inline-flex
+  display: inline-flex;
 }
 .containers {
   width: 100%;
@@ -20,7 +38,7 @@ body {
   right: 0;
   top: 0;
   width: 100%;
-  z-index: -3;
+  z-index: -1;
   opacity: 0.9;
 }
 .image-stack__item--top {
@@ -35,8 +53,32 @@ img {
   display: block;
 }
 .rec-proj {
-    margin-bottom: 15px;
+  margin-bottom: 5px;
+  margin-left: 15%;
+  margin-top: -160px;
 }
-.proj-row {
-    margin-top: 10px;
+.img-2 {
+  border-radius: 100px;
+  box-shadow: 15px 0px 10px -10px rgba(22, 131, 151, 0.7);
+  border: 2px solid rgba(22, 131, 151, 0.7);;
+}
+.proj-title {
+  color: #168397;
+  font-weight: bolder;
+}
+.proj-display {
+  border: 2px solid #168397;
+}
+.card-display {
+  box-shadow: 15px 0px 10px -10px rgba(22, 131, 151, 0.7);
+  border: 2px solid rgba(22, 131, 151, 0.7);;
+  margin: 0;
+  border-radius: 40px;
+}
+.my-name {
+  font-weight: bolder;
+  color: #168397;
+}
+.my-title {
+  color: #168397;
 }

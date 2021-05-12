@@ -7,16 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
 </head>
 
 <body>
+    <div class="front"></div>
+    <div class="back"></div>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="./home.html">CORY MOE</a>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <a class="navbar-brand my-name" href="./home.html">CORY MOE</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,20 +27,23 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="./about.html">About Me</a>
+                        <a class="nav-link my-title" href="./about.html">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./projects.html">Projects</a>
+                        <a class="nav-link my-title" href="./projects.html">Projects</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        <a class="nav-link dropdown-toggle my-title" href="#" id="navbarDropdownMenuLink" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Contact
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="mailto:moecory11@gmail.com">Email</a>
                             <a class="dropdown-item" href="https://github.com/moecory11" target="_blank">Git Hub</a>
-                            <a class="dropdown-item" href="https://www.linkedin.com/in/cory-moe-66530848/" target="_blank">LinkedIn</a>
+                            <a class="dropdown-item" href="https://www.linkedin.com/in/cory-moe-66530848/"
+                                target="_blank">LinkedIn</a>
+                            <a class="dropdown-item" href="https://1drv.ms/w/s!AhjrVYjz451VhAkImemhgU3Klrte?e=U5lgn9"
+                                target="_blank">Resume</a>
                         </div>
                     </li>
                 </ul>
@@ -50,61 +56,76 @@
                 <img src="./images/mountain border.jpg" alt="">
             </div>
             <div class="image-stack__item image-stack__item--top">
-                <img src="./images/Profile Picture.PNG" width="15%" height="15%" alt="">
+                <img class="img-2" src="./images/Profile Picture.PNG" width="15%" height="15%" alt="">
             </div>
         </div>
-        <div>Front-End Web Developer</div>
+        <div class="proj-title">Front-End Web Developer</div>
     </div>
-    </div>
-    <div class="container rec-proj">
-        <h2>Recent Projects:</h2>
+
+    <div class="rec-proj">
+        <h2 class="proj-title">Recent Projects:</h2>
         <div class="row">
-            <div class="col-sm-6">
-                <div class="card">
+            <div class="col-sm-3">
+                <div class="card card-display">
                     <div class="card-body">
-                        <h5 class="card-title">Project One</h5>
-                        <p class="card-text">Description and Details..</p>
-                        <a href="#" target="_blank" class="btn btn-outline-info">GitHub Link</a>
+                        <img class="card-img-top" src="./images/Screenshot (57).png" alt="Card image cap">
+                        <h5 class="card-title">Pokedex IRL</h5>
+                        <p class="card-text">Allows users to create a pokedex of
+                            pokemon cards that they can record, track and calculate
+                            values of.</p>
+                        <a href="https://github.com/iGotYu/spicy-project2" target="_blank"
+                            class="btn btn-outline-info">Pokedex IRL</a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="card">
+            <div class="col-sm-3">
+                <div class="card card-display">
                     <div class="card-body">
-                        <h5 class="card-title">Project Two</h5>
-                        <p class="card-text">Description and Details.</p>
-                        <a href="#" target="_blank" class="btn btn-outline-info">GitHub Link</a>
+                        <img class="card-img-top" src="./images/screenshot.FB.png" alt="Card image cap">
+                        <h5 class="card-title">Food and Bev</h5>
+                        <p class="card-text">Created to solve the problem of what to make with all the
+                            mismatched food and liquor you have in the kitchen.</p>
+                        <a href="https://github.com/moecory11/food-bev" target="_blank"
+                            class="btn btn-outline-info">Food and Bev</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card card-display">
+                    <div class="card-body">
+                        <img class="card-img-top" src="./images/weather dashboard screenshot.png" alt="Card image cap">
+
+                        <h5 class="card-title">Weather Dashboard</h5>
+                        <p class="card-text">Designed to create a weather dashboard that gives you the
+                            forecast for the upcoming week and current weather.</p>
+                        <a href="https://github.com/moecory11/weather-dashboard" target="_blank"
+                            class="btn btn-outline-info">Weather Dashboard</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row proj-row">
-            <div class="col-sm-6">
-                <div class="card">
+            <div class="col-sm-3">
+                <div class="card card-display">
                     <div class="card-body">
-                        <h5 class="card-title">Project Three</h5>
-                        <p class="card-text">Description and Details.</p>
-                        <a href="#" target="_blank" class="btn btn-outline-info">GitHub Link</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Four</h5>
-                        <p class="card-text">Description and Details.</p>
-                        <a href="#" target="_blank" class="btn btn-outline-info">GitHub Link</a>
+                        <h5 class="card-title">More Completed Projects and Works in Progress:</h5>
+                        <ul>
+                            <li class="card-text">Tech Blog</li>
+                            <li class="card-text">Crowdfunding-App</li>
+                        </ul>
+                        <a href="https://github.com/moecory11?tab=repositories" target="_blank"
+                            class="btn btn-outline-info">GitHub</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<footer class="containers">
-    <div class="image-stack">
-        <div class="image-stack__item image-stack__item--bottom">
-            <img src="./images/mountain border.jpg" alt="">
-        </div>
-</footer>
+    </div>
+    <footer class="containers">
+        <div class="image-stack">
+            <div class="image-stack__item image-stack__item--bottom">
+                <img src="./images/mountain border.jpg" alt="">
+            </div>
+    </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

@@ -7,59 +7,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style2.css" />
     <title>Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="./home.html">CORY MOE</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Contact
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Email</a>
-                            <a class="dropdown-item" href="#">Git Hub</a>
-                            <a class="dropdown-item" href="#">LinkedIn</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <div class="containers">
-        <div class="image-stack">
-            <div class="image-stack__item image-stack__item--bottom">
-                <img class="img-1" src="./images/mountain border.jpg" alt="" />
+    <main>
+        <div class="front"></div>
+        <div class="back"></div>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <a class="navbar-brand my-name" href="./home.html">CORY MOE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link my-title" href="#">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link my-title" href="./projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink my-title" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Contact
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="mailto:moecory11@gmail.com">Email</a>
+                                <a class="dropdown-item" href="https://github.com/moecory11" target="_blank">Git Hub</a>
+                                <a class="dropdown-item" href="https://www.linkedin.com/in/cory-moe-66530848/"
+                                    target="_blank">LinkedIn</a>
+                                    <a class="dropdown-item" href="https://1drv.ms/w/s!AhjrVYjz451VhAkImemhgU3Klrte?e=U5lgn9"
+                                target="_blank">Resume</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="containers">
+            <div class="image-stack">
+                <div class="image-stack__item image-stack__item--bottom">
+                    <img class="img-1" src="./images/mountain border.jpg" alt="" />
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <h1>About Me:</h1>
-    </div>
-    <footer class="containers">
-        <div class="image-stack">
-            <div class="image-stack__item image-stack__item--bottom">
-                <img class="img-1" src="./images/mountain border.jpg" alt="">
+        <div class="container about-tron">
+            <div class="row">
+                <img class="img-3" src="./images/IMG_0081.JPG" alt="">
+                <h1 class="display-4">About:</h1>
+                <hr class="my-4">
+                <p class="col about-par">I am 34 years old Junior Full-Stack Web Developer living in Seattle Washington. I have spent the last 18 years of my
+                    profesional career in
+                    the service
+                    industry. After years of catering to others needs I am making a change and learning a new skill and career path..web development. I am excited to see what the
+                    future holds as I expand my knowledge and continue down this coding journey.</p>
             </div>
-    </footer>
+        </div>
+
+        <footer class="containers">
+            <div class="image-stack">
+                <div class="image-stack__item image-stack__item--bottom">
+                    <img class="img-1" src="./images/mountain border.jpg" alt="">
+                </div>
+        </footer>
+    </main>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
